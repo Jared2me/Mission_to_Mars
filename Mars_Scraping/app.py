@@ -13,7 +13,7 @@ def index():
    mars = mongo.db.mars.find_one()
    return render_template("index.html", mars=mars)
 
-@app.route("/scrape")
+@app.route("/Scraping")
 def scrape():
    mars = mongo.db.mars
    mars_data = Scraping.scrape_all()
